@@ -1,10 +1,10 @@
 # JavaScript Module
 
 ## JavaScript 模块化历程
-1. 全局 Function
-2. namespace 模式
-3. IIFE（立即执行函数表达式） 模式
-4. IIFE（立即执行函数表达式） 宽放大模式
+1. 全局 Function 模式：[demo](./JSModuleHistory/1.Function/index.html)
+2. namespace 模式：[demo](./JSModuleHistory/2.Namespace/index.html)
+3. IIFE（立即执行函数表达式） 模式：[demo](./JSModuleHistory/3.IIFE/index.html)
+4. IIFE（立即执行函数表达式） 放大模式：[demo](./JSModuleHistory/4.IIFE+/index.html)
 
 ## 现代 JavaScript 模块化方案
 1. CommonJS
