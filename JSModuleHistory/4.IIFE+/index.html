@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>IIFE+</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <script src="module1.js"></script>
+    <script src="module2.js"></script>
+    <script>
+        // module1
+        module1.foo();  // foo()：Hello, this is module one！
+        // 因为没有暴露 bar 函数，bar 函数还是 module1 的私有函数，故此处会报错
+        //module1.bar(); // Uncaught TypeError: module1.bar is not a function
+
+        document.write('<br/>');
+
+        // module2
+        module2.foo();  // foo()：Hello, this is module two！
+        module2.bar();  // foo()：Hello, this is module two！
+        // module2 引入 module1 依赖后，通过 module1 暴露的 data 属性，访问到了 module1 的 data1 变量值
+        module2.module1Data();  //output module1 data：Hello, this is module one！
+    </script>
+</body>
+
+</html>

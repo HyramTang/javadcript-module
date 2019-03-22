@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>IIFE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <script src="module1.js"></script>
+    <script>
+        // module1 已定义为立即执行的函数表达式，
+        // 表达式内部定义的数据和函数形成私有变量、函数，外部无法进行访问
+        console.log(module1.data);  // Uncaught TypeError: Cannot read property 'data' of undefined
+        module1.foo();              // 因为上面报错，此条不执行
+        module1.bar();              // 因为上面报错，此条不执行
+    </script>
+</body>
+</html>
