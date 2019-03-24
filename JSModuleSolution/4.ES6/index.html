@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>ES6 Module</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body style="color:white">
+    1. 使用 babel 把 ES6 Module 语法转成 CommonJS 语法：babel src -d build <br/>
+    2. 再使用 browserify 把 CommonJS 语法转换成浏览器识别的语法：browserify build/app.js -o dist/bundle.js
+    <script type="text/javascript" src="dist/bundle.js"></script>
+</body>
+
+</html>

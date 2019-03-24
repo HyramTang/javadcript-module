@@ -8,6 +8,6 @@
 
 ## 现代 JavaScript 模块化方案
 1. CommonJS：[dmeo](./JSModuleSolution/1.CommonJS/browser/index.html)
-2. AMD
-3. CMD
-4. ES6 Module
+2. AMD：[demo](./JSModuleSolution/2.AMD/index.html)
+3. CMD：[demo](./JSModuleSolution/3.CMD/index.html)
+4. ES6 Module：[demo](./JSModuleSolution/4.ES6/index.html)
