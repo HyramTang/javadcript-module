@@ -4,9 +4,9 @@ requirejs.config({
     //模块标识名与模块路径映射
     paths: {
         // 模块名称（一定要与引入的模块名称一一对应）: 模块的路径
-        dataServer: 'dataServer',
+        dataServer: 'modules/dataServer',
         //一定不能写文件的后缀名，它会自动补全
-        alerter: 'alerter',
+        alerter: 'modules/alerter',
         //库/框架自己实现模块化的功能，定义了暴露模块的名称
         jquery: 'libs/jquery-1.12.4'
     }

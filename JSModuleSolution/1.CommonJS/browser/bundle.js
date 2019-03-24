@@ -25,14 +25,14 @@
     return r
 })()({
     1: [function (require, module, exports) {
-        const m2 = require('../module2');
-        const showData = require('../module3');
+        const m2 = require('../modules/module2');
+        const showData = require('../modules/module3');
 
         showData(m2.homeData);
         showData(m2.contactData);
     }, {
-        "../module2": 3,
-        "../module3": 4
+        "../modules/module2": 3,
+        "../modules/module3": 4
     }],
     2: [function (require, module, exports) {
         const homeUrl = 'http://localhost/home';
